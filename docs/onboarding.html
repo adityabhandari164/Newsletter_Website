@@ -54,58 +54,32 @@
         <h2>Tell us your interests</h2>
         <p class="modal-subtitle">A few quick questions to personalize your TIME newsletters.</p>
         <div class="step-status">
-          <p id="stepLabel" class="step-label">Page 1 of 5 - Frequency</p>
+          <p id="stepLabel" class="step-label">Page 1 of 3 - Briefing Type</p>
           <div class="step-dots" aria-hidden="true">
             <span class="step-dot active" data-step-dot="1"></span>
             <span class="step-dot" data-step-dot="2"></span>
             <span class="step-dot" data-step-dot="3"></span>
-            <span class="step-dot" data-step-dot="4"></span>
-            <span class="step-dot" data-step-dot="5"></span>
           </div>
         </div>
 
         <form id="detailsForm" class="details-form">
           <fieldset class="form-step" data-step="1">
-            <legend>1) How often do you want to hear from TIME?</legend>
-            <div class="briefing-options">
+            <legend id="briefingTypeLegend">1) What kind of briefing are you interested in?</legend>
+            <div id="briefingTypeOptions" class="briefing-options">
               <label class="briefing-option-card">
-                <input type="radio" name="frequency" value="daily" />
-                <span class="briefing-title">Daily</span>
-                <span class="briefing-copy">A short daily digest of the stories.</span>
+                <input type="radio" name="briefingType" value="general" />
+                <span class="briefing-title">General Briefing</span>
+                <span class="briefing-copy">The day's top headlines, curated by TIME editors.</span>
               </label>
               <label class="briefing-option-card">
-                <input type="radio" name="frequency" value="weekly" />
-                <span class="briefing-title">Weekly</span>
-                <span class="briefing-copy">A curated weekly roundup of stories and analysis.</span>
+                <input type="radio" name="briefingType" value="focused" />
+                <span class="briefing-title">Focused Briefing</span>
+                <span class="briefing-copy">A briefing built around the topics I choose.</span>
               </label>
             </div>
           </fieldset>
 
           <fieldset class="form-step hidden" data-step="2">
-            <legend id="briefingTypeLegend">2) If daily, what kind of daily briefing?</legend>
-            <div id="briefingTypeOptions" class="briefing-options">
-              <label class="briefing-option-card">
-                <input type="radio" name="briefingType" value="general" />
-                <span class="briefing-title">General Daily Briefing</span>
-                <span class="briefing-copy">The biggest stories across politics, business, culture, health, climate, tech, and the world.</span>
-              </label>
-              <label class="briefing-option-card">
-                <input type="radio" name="briefingType" value="focused" />
-                <span class="briefing-title">Focused Daily Briefing</span>
-                <span class="briefing-copy">A daily newsletter focused on specific interests (Politics, AI, Climate, Fashion).</span>
-              </label>
-              <label class="briefing-option-card">
-                <input type="radio" name="briefingType" value="both" />
-                <span class="briefing-title">Both</span>
-                <span class="briefing-copy">Send me general and add focused daily briefing too.</span>
-              </label>
-            </div>
-            <div class="step-actions">
-              <button type="button" id="backStepBtn1" class="secondary-btn">Back</button>
-            </div>
-          </fieldset>
-
-          <fieldset class="form-step hidden" data-step="3">
             <legend id="topicStepLegend">Choose topics you care about</legend>
             <p id="topicStepHelp" class="topic-help">Select up to 4 topics.</p>
             <p id="topicSelectionCounter" class="selection-counter">0 of 4 selected</p>
@@ -116,17 +90,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-step hidden" data-step="4">
-            <legend>Any top priorities among them?</legend>
-            <p id="prioritySelectionCounter" class="selection-counter">0 of 2 prioritized</p>
-            <div id="prioritySelectionGrid" class="topics-grid"></div>
-            <div class="step-actions">
-              <button type="button" id="backStepBtn3" class="secondary-btn">Back</button>
-              <button type="button" id="nextStepBtn4" class="save-btn">Next</button>
-            </div>
-          </fieldset>
-
-          <fieldset class="form-step hidden" data-step="5">
+          <fieldset class="form-step hidden" data-step="3">
             <legend>Optional: Help us make your briefing more relevant.</legend>
             <div class="profile-grid">
               <label>

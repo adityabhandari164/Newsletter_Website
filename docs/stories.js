@@ -11,7 +11,7 @@ const categories = [
 
 const categoryImages = {
   "Daily General Briefing": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=960&q=80",
-  "World News & Politics": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=960&q=80",
+  "Politics": "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=960&q=80",
   "Tech & AI": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=960&q=80",
   "Business & Leadership": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=960&q=80",
   "Health & Science": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=960&q=80",
@@ -26,7 +26,7 @@ const storyCatalog = {
     { title: "Five stories to understand before lunch", excerpt: "The key headlines across politics, business, climate, culture, and technology." },
     { title: "What matters now: the signal behind the noise", excerpt: "Editors highlight the stories with the biggest impact on public life." }
   ],
-  "World News & Politics": [
+  "Politics": [
     { title: "Election coalitions reshape policy debates in major capitals", excerpt: "Political blocs are shifting strategy as economic pressure intensifies." },
     { title: "Diplomatic summit sets new framework for regional security", excerpt: "Leaders commit to tighter coordination after months of volatility." },
     { title: "How voting patterns changed across urban and rural districts", excerpt: "Data from recent cycles shows a widening values gap." }
